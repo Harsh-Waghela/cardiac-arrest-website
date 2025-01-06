@@ -99,6 +99,7 @@ nav ul li a:hover {
     }
 
     header {
+        
     background: #3032b64f;
     color: rgb(186, 235, 196);
     border: #14074db7;
@@ -106,6 +107,7 @@ nav ul li a:hover {
 }
 
 header .container {
+    width : 100vw
     display: flex;
     justify-content: space-between;
     align-items: center;
