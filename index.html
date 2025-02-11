@@ -7,30 +7,38 @@
     <link rel="stylesheet" href="projectCss.css">
 </head>
 <body>
-    <header>
-        <div id="container">
-            <div>
-                <h1>Learn. Act. Save Lives</h1>
-                <p>Your guide to recognizing, responding to, and preventing cardiac arrest.</p>
-            </div>
-            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-            <nav id="nav-menu" class="hidden">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Emergency-Tutorials">EMERGENCY-TUTORIALS</a></li>
-                    <li><a href="#faq">FAQs</a></li>
-                    <li><a href="#real-stories">Stories</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id ="main-container">
+        <header>
     
-    <main>
-        <section id="about" class="section">
-            <h2>What is Cardiac Arrest ?</h2>
-             <p>Cardiac arrest is a sudden and life-threatening medical condition where the heart abruptly stops beating, leading to a loss of blood flow to the brain and other vital organs. It can occur without warning and requires immediate medical intervention. Unlike a heart attack, which is caused by a blockage in blood flow to the heart, cardiac arrest is an electrical malfunction in the heart that disrupts its pumping ability</p>
-             <section class="stats">
+            <div id="container">
+                <div>
+                    <h1>Learn. Act. Save Lives</h1>
+                    <p>Your guide to recognizing, responding to, and preventing cardiac arrest.</p>
+                </div>
+                
+                <nav id="nav-menu" class="hidden">
+
+                    <button class="navbar-toggle" id="toggleButton">
+                        ☰ 
+                    </button>
+
+                    <ul class="navbar-links" id="navbarLinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Emergency-Tutorials">EMERGENCY-TUTORIALS</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#real-stories">Stories</a></li>
+                        <li><a href="#map">NEAR BY HOSPITAL</a></li>
+                        <li><a href="#quiz-container">QUIZ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <section id="about" class="section">
+                <h2>What is Cardiac Arrest ?</h2>
+                <p>Cardiac arrest is a sudden and life-threatening medical condition where the heart abruptly stops beating, leading to a loss of blood flow to the brain and other vital organs. It can occur without warning and requires immediate medical intervention. Unlike a heart attack, which is caused by a blockage in blood flow to the heart, cardiac arrest is an electrical malfunction in the heart that disrupts its pumping ability</p>
+                <section class="stats">
                 <div class="stat">
                     <h2>32,457+</h2>
                     <p>Cardiac Arrests Annually &nbsp; &nbsp; &nbsp;</p> 
@@ -225,12 +233,12 @@
         <section id="Emergency-Tutorials" class="section">
             <h2 style="color: aliceblue;">Emergency Tutorial's </h2>
             <div class="resource-item">
-                <div id="tutorial-1">
+                <div class="tutorial-1">
                     <h3>CPR Tutorial</h3>
                     
                     <img  src="https://media.istockphoto.com/id/1442199185/vector/cardiopulmonary-resuscitation-cpr-reanimation-and-first-aid-procedures-step-by-step-health.jpg?s=612x612&w=0&k=20&c=T2VhVyAbYnglf-1giSaj0BUgiv5gZWnj6FmRsD8KYQ4=" alt="cpr Tutorial">
 
-                    <div id="video-container"></div><button onclick="showCPRTutorial()">Watch Video</button>
+                    <div id="video-container"></div><button onclick="showCPRTutorial()" class="video" id="watchButton1">Watch Video</button>
                     
                     <h1>Steps to Perform CPR on a Victim</h1>
                     <ol>
@@ -333,7 +341,7 @@
                     <h3>AED Tutorial </h3>
                     <img src="https://scx2.b-cdn.net/gfx/news/hires/2013/suddencardia.jpg" alt="AED Tutorial">
                     <div id="video2-container"></div>
-                    <button onclick="showAEDTutorial()">Watch Video</button>
+                    <button onclick="showAEDTutorial() " class="video" id="watchButton2">Watch Video</button>
                     <h1>Steps to Use an AED</h1>
                     <ol>
                         <li>
@@ -444,19 +452,6 @@
                                
                             </span>
                            </li>
-
-                        <li>
-                            <h3 class="text"> Heart problem could've ended his college basketball career before it began. It didn't.</h3>
-                            <img class ="story-image" src="https://www.heart.org/-/media/Images/News/SFTH/Archive/2023/0215SFTHKingMcClure_SC.jpg?sc_lang=en" alt="">
-
-                            <span>
-                                <P>
-                                    When shooting guard King McClure showed up at Baylor University in 2015, he was one of the top recruits in the country. An NBA career seemed likely.
-                                    But before he even made it to his first college game, a doctor told him that his basketball career was over – forever.
-                                    Routine heart screening exams revealed that McClure had hypertrophic cardiomyopathy, or HCM, a condition that causes the walls of the heart chamber to become thicker, which can impede blood flow to and from the heart. HCM can increase the risk of cardiac arrest, especially during physical activity, like basketball. In 1990, college basketball star Hank Gathers collapsed on the court and died because of HCM. In 1993, Boston Celtics star Reggie Lewis died from HCM during an offseason practice......<a href="https://www.heart.org/en/news/2023/02/15/heart-problem-couldve-ended-his-college-basketball-career-before-it-began">READ-MORE</a>
-                                </P>
-                            </span>
-                        </li>
                         
                     </div>
 
@@ -659,17 +654,34 @@
                     </P>
                 </details>
 
+                <section id="quiz">
+                    <h1>Mini Quiz</h1>
+    <button id="start-quiz">Start Quiz</button>
+
+    <div id="quiz-container">
+        <div id="question-container"></div>
+        <button id="next-question" style="display: none;">Next Question</button>
+        <p id="result"></p>
+    </div>
+
+                </section>
+
+                <section id="maps">
+                    <div id="direction">
+                        <iframe id ="map"src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d35879.81061173524!2d72.8247369695348!3d19.04612030817529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scardiac%20arrest%20hospital!5e0!3m2!1sen!2sin!4v1739287465949!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
 
                 
             </div>
         </section>
         
-    </main>
+        </main>
 
-    <footer>
+        <footer>
         <p>&copy; 2024 Awareness About Cardiac Arrest | All Rights Reserved</p>
-    </footer>
-
-    <script src="script.js"></script>
+        </footer>
+    </div>
+        <script src="script.js"></script>
 </body>
 </html>
