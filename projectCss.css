@@ -15,6 +15,12 @@ body {
     background-position: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 nav ul {
     list-style: none;
@@ -235,6 +241,7 @@ nav ul li a:hover {
         align-items: center;
         margin: 20px 0;
         color: rgb(186, 235, 196);
+        margin-left: 43px;
     }
     
     .resource-item{
@@ -259,20 +266,19 @@ nav ul li a:hover {
         background-color: #6881b1;
     }
     
-    #tutorial-1 img{
-        width: 60%;
+    #tutorial-1 img {
+        width: 100%; /* Changed from 60% */
         height: auto;
         border-radius: 10px;
-        margin: 10px
-    
-        }
+        margin: 10px 0; /* Simplified margin */
         
     
      #tutorial-1{
         background-color:#0f7192;
         border: #73afec;
         border-radius: 10px;
-        width: 90%;
+        width: 100%; /* Changed from 90% */
+        margin: 0 auto; /* Center the container */
     
     }
     
@@ -664,7 +670,8 @@ nav ul li a:hover {
         background-color:#04799a;
         border: #73afec;
         border-radius: 10px;
-        width: 50%;
+        width: 90%; /* Ensure this doesn't conflict with mobile */
+        margin: 0 auto;
     
     }
     
