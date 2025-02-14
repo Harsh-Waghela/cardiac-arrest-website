@@ -694,7 +694,10 @@ nav ul li a:hover {
         background-color:#0f7192;
         border: #0073e6;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;  
+        
+        
     
     }
     
