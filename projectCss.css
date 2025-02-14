@@ -265,7 +265,7 @@ nav ul li a:hover {
     }
     
     #tutorial-1 img {
-        width: 100%; /* Changed from 60% */
+        width: 70%; /* Changed from 60% */
         height: auto;
         border-radius: 10px;
         margin: 10px 0; /* Simplified margin */
@@ -286,7 +286,7 @@ nav ul li a:hover {
     }
     
     #tutorial-2 img{
-        width: 95%;
+        width: 70%;
         height: auto;
         border-radius: 10px;
         margin: 10px;
@@ -656,12 +656,12 @@ nav ul li a:hover {
     
     
     
-    #tutorial-1 img{
-        height: 50vh;
-        width: 100%;
+     #tutorial-1 img {
+        width: 70%; 
+        height: auto;
         border-radius: 10px;
-    
-        }
+        margin: 10px 0; 
+    }
         
     
     
@@ -670,7 +670,7 @@ nav ul li a:hover {
         background-color:#04799a;
         border: #73afec;
         border-radius: 10px;
-        width: 90%; /* Ensure this doesn't conflict with mobile */
+        width: 90%; 
         margin: 0 auto;    
     }
     
