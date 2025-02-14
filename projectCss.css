@@ -318,6 +318,30 @@ nav ul li a:hover {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.575)
     
     }
+
+    #story-form button{
+        margin: 10px;
+        background-color: #df510dc4;
+        border-radius: 50%;
+        width: 81px;
+    
+    }
+
+    #story-container{
+        display: flex;
+        gap: 10px;
+   
+       }
+       #story-input{
+           width:52%;
+           border-radius: 10px;
+           color: #dd0c0c;
+           text-decoration: dotted;
+           background-color: #74adbd;
+           padding: 10px;
+           font-size: larger;
+           margin: 17px;
+       }
     
     #story-1 {
         padding: 20px;
@@ -339,6 +363,8 @@ nav ul li a:hover {
         box-shadow: 0 4px 8px rgba(84, 50, 207, 0.342);
         transition: transform 0.3s ease-in-out;
     }
+
+    
     
     .text{
         color: aliceblue;
@@ -582,6 +608,7 @@ nav ul li a:hover {
         padding: 10px 20px;
         cursor: pointer;
         font-size: x-large;
+        margin-left: 38%;
     }
 
     p{
@@ -665,7 +692,8 @@ nav ul li a:hover {
         width: 70%; 
         height: auto;
         border-radius: 10px;
-        margin: 10px 0; 
+        margin-left: 15%; 
+         
     }
         
     
@@ -742,7 +770,30 @@ nav ul li a:hover {
         box-shadow: 0 4px 8px rgba(84, 50, 207, 0.342);
         transition: transform 0.3s ease-in-out;
     }
+
+    #story-form button{
+        margin: 10px;
+        background-color: #df510dc4;
+        border-radius: 50%;
+        width: 81px;
     
+    }
+
+    #story-container{
+        display: flex;
+        gap: 10px;
+   
+       }
+       #story-input{
+           width:30%;
+           border-radius: 10px;
+           color: #dd0c0c;
+           text-decoration: dotted;
+           background-color: #74adbd;
+           padding: 10px;
+           font-size: larger;
+           margin: 17px;
+       }
     .text{
         color: aliceblue;
     }
