@@ -247,7 +247,6 @@ nav ul li a:hover {
         display:flex;
         margin: 5px;
         gap: 15px ;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.575);
         flex-direction: column;
     }
     
@@ -256,7 +255,7 @@ nav ul li a:hover {
         background: #0073e6;
         border-radius: 25px;
         color: white;
-        border: none;
+        margin-left: 38%;
         padding: 10px 20px;
         cursor: pointer;
     }
@@ -276,8 +275,8 @@ nav ul li a:hover {
         background-color:#0f7192;
         border: #73afec;
         border-radius: 10px;
-        width: 100%; /* Changed from 90% */
-        margin: 0 auto; /* Center the container */
+        width: 90%; /* Changed from 90% */
+        margin:  auto; /* Center the container */
     
     }
     
@@ -581,6 +580,7 @@ nav ul li a:hover {
         border: none;
         padding: 10px 20px;
         cursor: pointer;
+        font-size: x-large;
     }
 
     p{
@@ -627,7 +627,7 @@ nav ul li a:hover {
     .grid-item p{
         color: #c7e461;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: large;
+        font-size: x-large;
     }
      
     .grid-item  {
@@ -649,7 +649,7 @@ nav ul li a:hover {
            display:flex;
            margin: 5px;
            gap: 15px ;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.575);
+        
         flex-direction: column;
     }
     
@@ -670,8 +670,8 @@ nav ul li a:hover {
         background-color:#04799a;
         border: #73afec;
         border-radius: 10px;
-        width: 90%; 
-        margin: 0 auto;    
+        width: 78%; 
+        margin: 2%;    
     }
     
     #tutorial-1 h3 {
@@ -684,6 +684,7 @@ nav ul li a:hover {
         height: 90vh;
         border-radius: 10px;
         margin: 10px;
+        margin-left: 8%;
     }
         
     
@@ -694,8 +695,8 @@ nav ul li a:hover {
         background-color:#0f7192;
         border: #0073e6;
         border-radius: 10px;
-        width: 90%;
-        margin: 0 auto;  
+        width: 78%;
+        margin: 2%;  
         
         
     
@@ -827,12 +828,13 @@ nav ul li a:hover {
         color: rgb(186, 235, 196);
         text-align: left;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+        font-size: x-large;
       }
       
       summary {
         margin-inline-start: 1rem;
         list-style-position: outside;
+          font-size: x-large;
       }
       
       summary::marker {
@@ -873,7 +875,7 @@ nav ul li a:hover {
     }
     #quiz{
         background-color:#448cd4 ;
-        height: 285px;
+        height: 391px;
         width: 50%;
         border-radius: 20px;
         margin: 10%;
@@ -884,11 +886,13 @@ nav ul li a:hover {
         padding: 10px;
         margin: 10px;
         color: #033d27;
+        font-size: x-large;
     }
 
      h1 {
      color: #eb8612;
      padding: 10px;
+         font-size: x-large;
     }
     #maps{
         background-color:#0f7192 ;
