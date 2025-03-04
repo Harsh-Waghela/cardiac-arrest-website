@@ -87,10 +87,8 @@ nav ul li a:hover {
   }
 
   .navbar-links {
-    display: none; /* Hide the links by default on smaller screens */
-    flex-direction: column;
     width: 100%;
-    background-color: #1a395c;
+    background-color: #185dab;
   }
 
   .navbar-links.active {
@@ -149,10 +147,11 @@ nav ul li a:hover {
     }
 
     header {
-        background: #3032b64f;
+        background: #2a537d;
         color: rgb(186, 235, 196);
         border: #14074db7;
         padding: 10px 20px;
+        position: fixed;
     }
     
     header .container {
@@ -328,7 +327,7 @@ nav ul li a:hover {
     }
 
     #story-container{
-        display: flex;
+        
         gap: 10px;
    
        }
@@ -408,6 +407,7 @@ nav ul li a:hover {
     
     #about{
         color: #f4f4f4;
+        margin-top: 50%;
     }
     button {
         align-items: center;
@@ -528,6 +528,7 @@ nav ul li a:hover {
      h1 {
      color: #eb8612;
      padding: 10px;
+     position: sticky;
     }
     
     #maps{
@@ -557,11 +558,12 @@ nav ul li a:hover {
 
 @media (min-width: 769px) {
     header {
-        background: #3032b64f;
+        background: #125faf;
         color: rgb(186, 235, 196);
         border: #14074db7;
         padding: 20px 40px;
         width: 100vw;
+        position: fixed;
     }
 
     header .container {
@@ -775,12 +777,16 @@ nav ul li a:hover {
         margin: 10px;
         background-color: #df510dc4;
         border-radius: 50%;
-        width: 81px;
-    
+        width: 120px;
+    }
+
+    #story-display{
+        display: flex;
+        flex-direction: column;
     }
 
     #story-container{
-        display: flex;
+        
         gap: 10px;
    
        }
@@ -836,6 +842,8 @@ nav ul li a:hover {
     
     #about{
         color: #f4f4f4;
+        margin-top: 13%;
+
     }
     button:hover {
         background: #34d80b;
@@ -976,6 +984,5 @@ nav ul li a:hover {
         width: 100%;
     }
 }
-
 
 
