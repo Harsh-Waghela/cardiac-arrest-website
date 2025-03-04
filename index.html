@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>A Comprehensive Guide to Cardiac Arrest Awareness</title>
     <link rel="stylesheet" href="projectCss.css">
 </head>
@@ -12,25 +13,25 @@
     
             <div id="container">
                 <div>
+                    <img id="logo"  src="logo.png" alt="logo">
+
                     <h1>Learn. Act. Save Lives</h1>
                     <p>Your guide to recognizing, responding to, and preventing cardiac arrest.</p>
                 </div>
-                
-                <nav id="nav-menu" class="hidden">
-
-                    <button class="navbar-toggle" id="toggleButton">
-                        ☰ 
-                    </button>
-
-                    <ul class="navbar-links" id="navbarLinks">
+                <div>
+                <nav class="navbar">
+                    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#maps">Hospital</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#Emergency-Tutorials">EMERGENCY-TUTORIALS</a></li>
-                        <li><a href="#faq">FAQs</a></li>
-                        <li><a href="#real-stories">Stories</a></li>
-                        <li><a href="#map">NEAR BY HOSPITAL</a></li>
-                        <li><a href="#quiz-container">QUIZ</a></li>
+                        <li><a href="#Emergency-Tutorials">Tutorial</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                        <li><a href="#real-stories">VICTIM STORY</a></li>
+                        <li><a href="#faq">FAQS</a></li>
+
                     </ul>
                 </nav>
+                </div>
             </div>
         </header>
     
@@ -56,7 +57,7 @@
     
              <h2>How to Recognize Cardiac Arrest</h2>
              <section class ="image-section">
-             <img id="cardiac-arrest-image" src="https://www.manipalhospitals.com/uploads/image_gallery/signs-and-symptoms-of-sudden-cardiac-arrest.png" alt="recognizing image">
+             <img id="cardiac-arrest-image" src="signs-and-symptoms-of-sudden-cardiac-arrest.png" alt="recognizing image">
              </section>
 
             <div class="grid">
@@ -121,7 +122,7 @@
             <h2>Responding to Cardiac Arrest</h2>
 
             <section class ="image-section">
-                <img id="cardiac-arrest-image" src="https://c8.alamy.com/comp/2E58FWA/first-aid-response-for-cardiac-arrest-emergency-treatment-procedures-stick-figure-icons-vector-illustrations-of-cpr-rescue-procedures-and-how-to-help-2E58FWA.jpg">
+                <img id="cardiac-arrest-image" src="first-aid-response-for-cardiac-arrest-emergency-treatment-procedures-stick-figure-icons-vector-illustrations-of-cpr-rescue-procedures-and-how-to-help-2E58FWA.jpg">
                 </section>
 
                 <div class="grid">
@@ -235,7 +236,7 @@
             <div class="resource-item">
                 <div id="tutorial-1">
                     <h3>CPR Tutorial</h3>
-                    <img  src="https://cdn.img.gen.in/assets/Business/2665/Feeds/7523/2665_638470032857101790117528.jpg?rendered=true" alt="cpr Tutorial">
+                    <img  src="2665_638470032857101790117528.webp" alt="cpr Tutorial">
 
 
                     <div id="video-container"></div>
@@ -342,7 +343,7 @@
 
                 <div id="tutorial-2">
                     <h3>AED Tutorial </h3>
-                    <img src="https://scx2.b-cdn.net/gfx/news/hires/2013/suddencardia.jpg" alt="AED Tutorial">
+                    <img src="suddencardia.jpg" alt="AED Tutorial">
                     <div id="video2-container"></div>
                     <div id="steps">
                     <button onclick="showAEDTutorial() " class="video" id="watchButton2">Watch Video</button>
@@ -441,7 +442,7 @@
                     <div id="story-1">
                        <li> 
                          <h3 class ="text">UC Health’s experts helped Will Achberger defy the odds and overcome a heart attack that led to cardiac arrest.</h3>
-                         <img class ="story-image" src="https://www.uchealth.com/content/dam/uchealth/images/media-room/patient-stories/surviving-a-cardiac-arrest-a-real-life-story-of-hope-2.jpg/jcr:content/renditions/cq5dam.web.767.431.jpg" alt="">
+                         <img class ="story-image" src="cq5dam.web.767.431.jpg" alt="">
                          <span><p>Will Achberger, 56, considers himself lucky in more ways than one. He has been married for 35 years to his high school sweetheart and is self-employed in a family business that was started by his father. He even performed as a drummer in a local band for 12 years. But on Jan. 19, 2020, Will’s life changed in an unexpected, dramatic way.
 
                             Will never expected to add cardiac arrest survivor as part of his life story. There is no family history of heart failure......<a href="https://www.uchealth.com/en/media-room/patient-stories/surviving-cardiac-arrest-an-incredible-real-life-story-of-hope">read more</a></p>
