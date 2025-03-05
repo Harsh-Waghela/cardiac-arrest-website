@@ -7,7 +7,8 @@ function showCPRTutorial() {
             title="CPR Tutorial" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>`;
+            allowfullscreen></iframe>
+        <button onclick="closeVideo('video-container')">Close</button>`;
 }
 
 function showAEDTutorial() {
@@ -18,12 +19,18 @@ function showAEDTutorial() {
             title="AED Tutorial" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>`;
+            allowfullscreen></iframe>
+        <button onclick="closeVideo('video2-container')">Close</button>`;
+}
+
+function closeVideo(containerId) {
+    document.getElementById(containerId).innerHTML = "";
 }
 
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
+
 
 // Handle story submission
 document.getElementById("story-form").addEventListener("submit", function (e) {
