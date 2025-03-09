@@ -33,31 +33,42 @@ function toggleMenu() {
 
 
 // Handle story submission
-document.getElementById("story-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent form from refreshing the page
+document.getElementById("story-form").addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevent page refresh
 
-    // Get the story input
     const storyInput = document.getElementById("story-input");
-    const storyText = storyInput.value.trim(); // Get and trim the user's input
-    if (!storyInput) {
-        console.error("The element with id 'story-input' was not found in the DOM.");
+    const storyText = storyInput.value.trim();
+
+    if (!storyText) {
+        alert("Please write a story before submitting.");
+        return;
     }
 
-    if (storyText) {
-        // Create a new h4 element for the story
-        const storyContainer = document.getElementById("story-container");
-        const newStory = document.createElement("h4");
-        newStory.textContent = storyText;
+    try {
+        // Send story to backend using fetch
+        const response = await fetch("http://localhost:3000/add-story", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ story: storyText }),
+        });
 
-        // Append the new story to the story container
-        storyContainer.appendChild(newStory);
+        const data = await response.json();
+        alert(data.message); // Show success message
+
+        // If story is submitted successfully, display it on the page
+        if (response.ok) {
+            const storyContainer = document.getElementById("story-container");
+            const newStory = document.createElement("h4");
+            newStory.textContent = storyText;
+            storyContainer.appendChild(newStory);
+        }
 
         // Clear the input field
         storyInput.value = "";
-
-        // Alert the user and confirm submission
-        alert("Thank you for sharing your story!");
-    } else {
-        alert("Please write a story before submitting.");
+    } catch (error) {
+        console.error("Error submitting story:", error);
+        alert("Failed to submit story. Please try again.");
     }
 });
