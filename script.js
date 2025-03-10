@@ -72,3 +72,25 @@ document.getElementById("story-form").addEventListener("submit", async function 
         alert("Failed to submit story. Please try again.");
     }
 });
+
+// Function to fetch and display comments
+function fetchComments() {
+    fetch("http://localhost:3000/get-comments") // Make sure this matches your server route
+    .then(response => response.json())
+    .then(data => {
+        console.log("Fetched comments:", data); // Log fetched comments for debugging
+
+        const storyContainer = document.getElementById("story-container");
+        storyContainer.innerHTML = ""; // Clear previous comments
+
+        data.forEach(comment => {
+            const li = document.createElement("li");
+            li.textContent = comment.comment + " (Added on: " + new Date(comment.created_at).toLocaleString() + ")";
+            storyContainer.appendChild(li);
+        });
+    })
+    .catch(error => console.error("Error fetching comments:", error));
+}
+
+// Fetch comments when the page loads
+window.onload = fetchComments;
