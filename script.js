@@ -1,4 +1,50 @@
 // script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+  });
+
+  // First, add the Intersection Observer API to detect when elements are in viewport
+document.addEventListener("DOMContentLoaded", function() {
+    const gridItems = document.querySelectorAll('.grid-item');
+    
+    const appearOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -100px 0px"
+    };
+    
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add('appear');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    
+    gridItems.forEach(item => {
+      item.classList.add('slide-in');
+      appearOnScroll.observe(item);
+    });
+  });
+
+
 function showCPRTutorial() {
     const videoContainer = document.getElementById("video-container");
     videoContainer.innerHTML = `
