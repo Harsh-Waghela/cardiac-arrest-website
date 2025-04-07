@@ -148,6 +148,12 @@ h1 .animated-text::before {
     top: 15%;
 }
 
+#main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .grid {
     display: flex;
     gap: 20px;
@@ -198,14 +204,6 @@ h1 .animated-text::before {
   .grid-item:nth-child(16) { transition-delay: 0.16s; }
   .grid-item:nth-child(17) { transition-delay: 0.17s; }
   .grid-item:nth-child(18) { transition-delay: 0.18s; }
-
-
-#main-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 
 
 .video:hover{
@@ -287,12 +285,11 @@ h1 .animated-text::before {
         text-decoration: none;
         border-bottom: 2px solid yellowgreen;
     }
-
- #starter{
+    
+    #starter{
         display: flex;
         flex-direction: row;
     }
-    
     p{
         color: rgb(70, 70, 67);
     }
@@ -353,7 +350,6 @@ h1 .animated-text::before {
     
     .grid {
         display: flex;
-        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         flex-direction: column;
     }
@@ -369,8 +365,28 @@ h1 .animated-text::before {
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.575);
+        opacity: 0;
+        transition: all 0.8s ease-out;
     }
     
+    .slide-in 
+    {
+        transform: translateX(-100px);
+    }
+      
+    .appear
+     {
+        opacity: 1;
+        transform: translateX(0);
+    }
+      
+      .grid-item:nth-child(1) { transition-delay: 0.1s; }
+      .grid-item:nth-child(2) { transition-delay: 0.2s; }
+      .grid-item:nth-child(3) { transition-delay: 0.3s; }
+      .grid-item:nth-child(4) { transition-delay: 0.4s; }
+      .grid-item:nth-child(5) { transition-delay: 0.5s; }
+      .grid-item:nth-child(6) { transition-delay: 0.6s; }
+
     #Emergency-Tutorials {
         background-color: #123c6da4;
         align-items: center;
@@ -661,7 +677,6 @@ h1 .animated-text::before {
         color: #033d27;
     }
 
-     
     
     #maps{
         background-color:#0f7192 ;
@@ -693,14 +708,19 @@ h1 .animated-text::before {
         background: #125faf;
         color: rgb(186, 235, 196);
         border: #14074db7;
-        padding: 20px 40px;
+        padding: 0px 20px;
         width: 100vw;
+        position: fixed;
     }
 
     header .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    #starter{
+        display: flex;
+        flex-direction: row;
     }
 
     nav ul {
@@ -759,11 +779,11 @@ h1 .animated-text::before {
     
     .section  {
         background-color: #123c6da4;
-   
+        margin-top: 12%;
         text-align: left;
     }
     
-   .stats {
+    .stats {
         display: flex;
         justify-content: space-evenly;
         padding: 5px;
@@ -1126,11 +1146,6 @@ h1 .animated-text::before {
         font-size: x-large;
     }
 
-     h1 {
-     color: #eb8612;
-     padding: 10px;
-         font-size: x-large;
-    }
     #maps{
         background-color:#0f7192 ;
         width:74% ;
