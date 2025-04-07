@@ -287,6 +287,11 @@ h1 .animated-text::before {
         text-decoration: none;
         border-bottom: 2px solid yellowgreen;
     }
+
+ #starter{
+        display: flex;
+        flex-direction: row;
+    }
     
     p{
         color: rgb(70, 70, 67);
